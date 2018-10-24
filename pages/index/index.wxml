@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+   <scroll-view class="scroll-view" scroll-x="{{true}}" scroll-left="{{scrollLeft}}">
+        <view class="navbar">
+            <block wx:for="{{tabs}}">
+                <view data-index="{{index}}" class="navbar-item {{activeIndex === index ? 'item-on' : ''}}" bindtap="tabClick">
+                    <view class="title">{{item.name}}</view>
+                </view>
+            </block>
+            <view class="navbar-slider" style="width: {{sliderWidth}}rpx; left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+    </scroll-view>
+</view>

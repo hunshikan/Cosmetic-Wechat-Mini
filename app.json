@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E82363",
+    "navigationBarTitleText": "医美",
+    "navigationBarTextStyle":"white"
+  }
+}
